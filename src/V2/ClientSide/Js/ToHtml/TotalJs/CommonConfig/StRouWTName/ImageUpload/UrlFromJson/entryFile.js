@@ -5,6 +5,7 @@ const path = require('path');
 const { getSelectedFolderPath } = require('../../../../../../../../../CommonFuncs/getSelectedFolderPath');
 
 const CommonRegisterCommand = "ClientSide.Js.ToHtml.TotalJs.CommonConfig.StRouWTName.ImageUpload.UrlFromJson";
+const CommonNewFolderName = "ImageUpload";
 
 const StartFunc = () => {
     activateFunc();
@@ -23,7 +24,7 @@ const LocalFuncToActivate = async () => {
         vscode.window.showInformationMessage(`Show folder: ${__dirname}`);
 
         const LocalFromPath = path.join(__dirname, "..", "copyCode");
-        const LocalToPath = path.join(selectedFolder, "Show");
+        const LocalToPath = path.join(selectedFolder, CommonNewFolderName);
 
         await fse.copy(LocalFromPath, LocalToPath);
 
