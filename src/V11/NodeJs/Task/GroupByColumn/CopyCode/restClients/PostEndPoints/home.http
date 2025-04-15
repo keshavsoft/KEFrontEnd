@@ -1,4 +1,0 @@
-POST http://localhost:7328/binV4/StudentNames/SelectedColumns/CollegeName
-Content-Type: application/json
-
-["StudentName"]
