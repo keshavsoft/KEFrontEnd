@@ -3,7 +3,7 @@
   "displayName": "KEFrontEnd",
   "publisher": "KeshavSoft",
   "description": "KeshavSoft Extension to enhance the development of web applications",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.96.0"
   },
@@ -61,6 +61,10 @@
       {
         "command": "ClientSide.Js.ToHtml.TotalJs.CommonConfig.StaticColumns.Show.UrlFromJson",
         "title": "Cs Js ToHtml TotJs ComConfig StatCol Show UrlFromJson"
+      },
+      {
+        "command": "ClientSide.Js.ToHtml.TotalJs.CommonConfig.StaticColumns.Show.UrlFromJson",
+        "title": "Cs Js ToHtml TotJs ComConfig StRouWTName ImagUp UrlFromJson"
       },
       {
         "command": "KChakri",
