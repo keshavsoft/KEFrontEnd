@@ -21,7 +21,7 @@ const LocalFuncToActivate = async () => {
 
         if (!selectedFolder) throw new Error('No folder selected, and no active file found in the workspace.');
 
-        vscode.window.showInformationMessage(`Show folder: ${__dirname}`);
+        vscode.window.showInformationMessage(`${CommonNewFolderName} folder: ${__dirname}`);
 
         const LocalFromPath = path.join(__dirname, "..", "copyCode");
         const LocalToPath = path.join(selectedFolder, CommonNewFolderName);
