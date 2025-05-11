@@ -3,7 +3,7 @@
   "displayName": "KEFrontEnd",
   "publisher": "KeshavSoft",
   "description": "KeshavSoft Extension to enhance the development of web applications",
-  "version": "0.0.9",
+  "version": "0.0.11",
   "engines": {
     "vscode": "^1.96.0"
   },
@@ -17,6 +17,10 @@
       {
         "command": "AddListeners.Empty",
         "title": "AddListeners Empty"
+      },
+      {
+        "command": "AddListeners.HtmlId.Click",
+        "title": "AddListeners HtmlId Click"
       }
     ],
     "menus": {
