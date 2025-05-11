@@ -3,7 +3,7 @@
   "displayName": "KEFrontEnd",
   "publisher": "KeshavSoft",
   "description": "KeshavSoft Extension to enhance the development of web applications",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "engines": {
     "vscode": "^1.96.0"
   },
@@ -15,64 +15,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "ClientSide.Js.ToHtml.TotalJs.AsModule.Show.FixedColumns.UrlFromJson",
-        "title": "ClientSide Js ToHtml TotalJs AsModule Show FixedColumns UrlFromJson"
-      },
-      {
-        "command": "ClientSide.Js.ToHtml.TotalJs.AsModule.Show.FixedColumns.UrlFromInput",
-        "title": "ClientSide Js ToHtml TotalJs AsModule Show FixedColumns UrlFromInput"
-      },
-      {
-        "command": "ClientSide.Js.ToHtml.TotalJs.AsModule.Show.ColumnsFromFetch.UrlFromJson",
-        "title": "Cs Js ToHtml TotJs AsMod Show ColFromFet UrlFromJson"
-      },
-      {
-        "command": "ClientSide.Js.FetchFuncs.AsModule.Show.ColumnsFromFetch.UrlFromJson",
-        "title": "ClientSide Js FetchFuncs AsModule Show ColumnsFromFetch UrlFromJson"
-      },
-      {
-        "command": "ClientSide.Js.FetchFuncs.AsModule.Show.ColumnsFromFetch.UrlFromInput",
-        "title": "ClientSide Js FetchFuncs AsModule Show ColumnsFromFetch UrlFromInput"
-      },
-      {
-        "command": "ClientSide.Js.ToHtml.TotalJs.AsModule.Show.ColumnsFromFetchAfterDestroy.UrlFromJson",
-        "title": "Cs Js ToHtml TotJs AsMod Show ColFetAD UrlFJ"
-      },
-      {
-        "command": "ClientSide.Js.ToHtml.TotalJs.AsModule.Delete.ColumnsFromFetch.UrlFromJson",
-        "title": "Cs Js ToHtml TotJs AsMod Delete ColFromFet UrlFromJson"
-      },
-      {
-        "command": "ClientSide.Js.AddListeners.AsModule",
-        "title": "ClientSide Js AddListeners AsModule"
-      },
-      {
-        "command": "ClientSide.Js.AddListeners.ToHtmlId",
-        "title": "Cs Js AddLists ToHtmlId"
-      },
-      {
-        "command": "ClientSide.Js.FetchFuncs.AsModule.Methods.Get",
-        "title": "Cs Js FetchFuncs AsMod Met Get"
-      },
-      {
-        "command": "extension.Path",
-        "title": "Get the current Extension Path"
-      },
-      {
-        "command": "ClientSide.Js.ToHtml.TotalJs.CommonConfig.StaticColumns.Show.UrlFromJson",
-        "title": "Cs Js ToHtml TotJs ComConfig StatCol Show UrlFromJson"
-      },
-      {
-        "command": "ClientSide.Js.ToHtml.TotalJs.CommonConfig.StRouWTName.ImageUpload.UrlFromJson",
-        "title": "Cs Js ToHtml TotJs ComConfig StRouWTName ImagUp UrlFromJson"
-      },
-      {
-        "command": "KChakri",
-        "title": "KChakri"
-      },
-      {
-        "command": "KCharan",
-        "title": "KCharan"
+        "command": "AddListeners.Empty",
+        "title": "AddListeners Empty"
       }
     ],
     "menus": {
