@@ -3,7 +3,7 @@
   "displayName": "KEFrontEnd",
   "publisher": "KeshavSoft",
   "description": "KeshavSoft Extension to enhance the development of web applications",
-  "version": "0.0.11",
+  "version": "0.1.1",
   "engines": {
     "vscode": "^1.96.0"
   },
@@ -21,6 +21,14 @@
       {
         "command": "AddListeners.HtmlId.Click",
         "title": "AddListeners HtmlId Click"
+      },
+      {
+        "command": "WithFolder.ShowAllGet",
+        "title": "WithFolder ShowAllGet"
+      },
+      {
+        "command": "Calendar.ShowAllGet",
+        "title": "Calendar ShowAllGet"
       }
     ],
     "menus": {
