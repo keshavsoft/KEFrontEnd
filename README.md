@@ -42,6 +42,10 @@ write end points in nodejs
 
 - WithFolder.ShowAllGet and Calendar started
 
+### 0.1.2
+
+- AddListeners.HtmlId.Click good
+
 ## License
 
 MIT

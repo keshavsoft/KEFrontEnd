@@ -12,7 +12,7 @@ const StartFunc = () => {
 const LocalFuncToActivate = async () => {
     try {
         const LocalFromPath = path.join(__dirname, "copyCode");
-        const LocalToPath = await LocalFuncGetActiveEditor();
+        const LocalToPath = await LocalFuncFromClipboard();
 
         await fse.copy(LocalFromPath, `${LocalToPath}/ShowAllGet`);
 
@@ -22,6 +22,17 @@ const LocalFuncToActivate = async () => {
     } catch (error) {
         vscode.window.showErrorMessage(`Error: ${error.message}`);
     };
+};
+
+const LocalFuncFromClipboard = async () => {
+    await vscode.commands.executeCommand('copyFilePath');
+
+    const clipboardText = await vscode.env.clipboard.readText();
+
+    if (clipboardText && (await fse.pathExists(clipboardText)) && (await fse.lstat(clipboardText)).isDirectory()) {
+        return clipboardText;
+    };
+    return null;
 };
 
 const LocalFuncGetActiveEditor = async () => {
