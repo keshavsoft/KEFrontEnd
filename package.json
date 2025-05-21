@@ -3,7 +3,7 @@
   "displayName": "KEFrontEnd",
   "publisher": "KeshavSoft",
   "description": "KeshavSoft Extension to enhance the development of web applications",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "engines": {
     "vscode": "^1.96.0"
   },
@@ -29,6 +29,10 @@
       {
         "command": "Calendar.ShowAllGet",
         "title": "Calendar ShowAllGet"
+      },
+      {
+        "command": "WithFolder.Show",
+        "title": "WithFolder Show"
       }
     ],
     "menus": {
