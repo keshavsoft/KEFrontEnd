@@ -33,6 +33,10 @@
       {
         "command": "WithFolder.Show",
         "title": "WithFolder Show"
+      },
+      {
+        "command": "WithFolder.InsertFooter",
+        "title": "WithFolder InsertFooter"
       }
     ],
     "menus": {
