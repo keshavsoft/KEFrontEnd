@@ -37,6 +37,22 @@
       {
         "command": "WithFolder.InsertFooter",
         "title": "WithFolder InsertFooter"
+      },
+      {
+        "command": "WithFolder.Create",
+        "title": "WithFolder Create"
+      },
+      {
+        "command": "WithFolder.Update",
+        "title": "WithFolder Update"
+      },
+      {
+        "command": "WithFolder.Alter",
+        "title": "WithFolder Alter"
+      },
+      {
+        "command": "WithFolder.Delete",
+        "title": "WithFolder Delete"
       }
     ],
     "menus": {
