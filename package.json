@@ -53,6 +53,10 @@
       {
         "command": "WithFolder.Delete",
         "title": "WithFolder Delete"
+      },
+      {
+        "command": "Cs.TotalJs.FromInput",
+        "title": "Cs TotalJs FromInput"
       }
     ],
     "menus": {
