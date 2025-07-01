@@ -3,7 +3,7 @@
   "displayName": "KEFrontEnd",
   "publisher": "KeshavSoft",
   "description": "KeshavSoft Extension to enhance the development of web applications",
-  "version": "5.16.1",
+  "version": "6.0.1",
   "engines": {
     "vscode": "^1.96.0"
   },
