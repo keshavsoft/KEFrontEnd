@@ -57,6 +57,10 @@
       {
         "command": "TotalJs.EndPoint.FromInput.Show",
         "title": "TotalJs EndPoint FromInput Show"
+      },
+      {
+        "command": "DomLoaded.Show",
+        "title": "DomLoaded Show"
       }
     ],
     "menus": {

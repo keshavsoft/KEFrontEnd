@@ -1,4 +1,3 @@
-const { StartFunc: StartFromShowAllGet } = require("./ShowAllGet/entryFile");
 const { StartFunc: StartFromShow } = require("./Show/entryFile");
 const { StartFunc: StartInsertFooter } = require("./Crud/entryFile");
 const { StartFunc: StartCreate } = require("./Create/entryFile");
@@ -7,7 +6,6 @@ const { StartFunc: StartAlter } = require("./Alter/entryFile");
 const { StartFunc: StartDelete } = require("./Delete/entryFile");
 
 const StartFunc = () => {
-    StartFromShowAllGet();
     StartFromShow();
     StartInsertFooter();
     StartCreate();
