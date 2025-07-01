@@ -2,7 +2,7 @@ const vscode = require('vscode');
 const fse = require('fs-extra');
 const path = require('path');
 
-const CommonRegisterCommand = "WithFolder.Show";
+const CommonRegisterCommand = "DomLoaded.Show";
 const { StartFunc: StartFuncFromOpenApp } = require("./openApp");
 const CommonToFolderName = "Show";
 
