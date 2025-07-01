@@ -1,11 +1,7 @@
-import { StartFunc as StartFuncBuildBsTable } from "./BuildBsTable/entryFile.js";
-import { StartFunc as StartFuncAddListeners } from "./AddListeners/startFunc.js";
-import { StartFunc as StartFuncshowOnDom } from "./showOnDom.js";
+import { StartFunc as StartFuncFuncToRun } from "./funcToRun.js";
 
-const StartFunc = () => {
-    StartFuncBuildBsTable();
-    StartFuncAddListeners();
-    StartFuncshowOnDom();
+let StartFunc = () => {
+    document.addEventListener('DOMContentLoaded', StartFuncFuncToRun);
 };
 
 export { StartFunc };
