@@ -61,6 +61,22 @@
       {
         "command": "DomLoaded.Show",
         "title": "DomLoaded Show"
+      },
+      {
+        "command": "DomLoaded.Create",
+        "title": "DomLoaded Create"
+      },
+      {
+        "command": "DomLoaded.Alter",
+        "title": "DomLoaded Alter"
+      },
+      {
+        "command": "DomLoaded.Update",
+        "title": "DomLoaded Update"
+      },
+       {
+        "command": "DomLoaded.Delete",
+        "title": "DomLoaded Delete"
       }
     ],
     "menus": {
