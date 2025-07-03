@@ -74,9 +74,17 @@
         "command": "DomLoaded.Update",
         "title": "DomLoaded Update"
       },
-       {
+      {
         "command": "DomLoaded.Delete",
         "title": "DomLoaded Delete"
+      },
+      {
+        "command": "DomLoaded.SubTableShow",
+        "title": "DomLoaded SubTableShow"
+      },
+      {
+        "command": "DomLoaded.SubTableInsert",
+        "title": "DomLoaded SubTableInsert"
       }
     ],
     "menus": {
