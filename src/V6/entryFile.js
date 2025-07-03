@@ -4,6 +4,7 @@ const { StartFunc: StartFuncFromCalendar } = require("./Calendar/entryFile");
 const { StartFunc: StartFuncFromInputShow } = require("./FromInput/Show/entryFile");
 const { StartFunc: StartFuncTotalJs } = require("./TotalJs/entryFile");
 const { StartFunc: StartFuncDomLoad } = require("./DomLoad/entryFile");
+const { StartFunc: StartFuncSubTable } = require("./SubTable/entryFile");
 
 const StartFunc = () => {
     StartClientSide();
@@ -12,6 +13,7 @@ const StartFunc = () => {
     StartFuncFromInputShow();
     StartFuncTotalJs();
     StartFuncDomLoad();
+    StartFuncSubTable();
 };
 
 module.exports = { StartFunc };
