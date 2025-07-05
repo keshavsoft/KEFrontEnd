@@ -58,6 +58,10 @@ write end points in nodejs
 
 - DomContentLoad started...
 
+### 7.0.2
+
+- post data upper case removed
+
 ## License
 
 MIT
