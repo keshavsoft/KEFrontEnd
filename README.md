@@ -54,6 +54,10 @@ write end points in nodejs
 
 - TotalJs started
 
+### 7.0.1
+
+- DomContentLoad started...
+
 ## License
 
 MIT
