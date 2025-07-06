@@ -66,6 +66,10 @@ write end points in nodejs
 
 - TableWithCrud started...
 
+### 7.0.4
+
+- TableWithCrud, TableShow started...
+
 ## License
 
 MIT
