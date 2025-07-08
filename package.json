@@ -97,6 +97,10 @@
       {
         "command": "DomContentLoad.CommonConfig.TableShow",
         "title": "DomContentLoad CommonConfig TableShow"
+      },
+      {
+        "command": "DomContentLoad.CommonConfig.TableAlter",
+        "title": "DomContentLoad CommonConfig TableAlter"
       }
     ],
     "menus": {
