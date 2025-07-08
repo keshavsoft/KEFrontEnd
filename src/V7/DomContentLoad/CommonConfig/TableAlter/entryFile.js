@@ -2,7 +2,7 @@ const vscode = require('vscode');
 const fse = require('fs-extra');
 const path = require('path');
 
-const CommonRegisterCommand = `DomContentLoad.CommonConfig.TableShow`;
+const CommonRegisterCommand = `DomContentLoad.CommonConfig.TableAlter`;
 
 const { StartFunc: StartFuncFromOpenApp } = require("./openApp");
 
