@@ -70,6 +70,10 @@ write end points in nodejs
 
 - TableWithCrud, TableShow started...
 
+### 1.8.1
+
+- TotalJs.BoilerPlate started...
+
 ## License
 
 MIT
