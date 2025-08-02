@@ -74,6 +74,10 @@ write end points in nodejs
 
 - TotalJs.BoilerPlate started...
 
+### 1.8.2
+
+- FetchFuncs started...
+
 ## License
 
 MIT

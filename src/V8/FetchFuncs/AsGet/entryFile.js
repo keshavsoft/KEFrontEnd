@@ -2,8 +2,9 @@ const vscode = require('vscode');
 const fse = require('fs-extra');
 const path = require('path');
 
-const CommonRegisterCommand = "TotalJs.BoilerPlate";
-const { StartFunc: StartFuncFromOpenApp } = require("./openApp");
+const CommonRegisterCommand = "FetchFuncs.AsGet";
+// const { StartFunc: StartFuncFromOpenApp } = require("./openApp");
+const { StartFunc: StartFuncFromAlterFile } = require("./AlterFile/entryFile");
 
 const StartFunc = () => {
     vscode.commands.registerCommand(CommonRegisterCommand, LocalFuncToActivate);
@@ -12,24 +13,24 @@ const StartFunc = () => {
 const LocalFuncToActivate = async () => {
     try {
         const LocalFromPath = path.join(__dirname, "copyCode");
-        const LocalToPath = await LocalFuncForFolder();
+        const LocalToPath = await LocalFuncGetActiveEditorPath();
 
         await fse.copy(LocalFromPath, LocalToPath);
 
-        LocalFuncOpenEntryFile({ inToPath: LocalToPath });
+        StartFuncFromAlterFile({
+            inActiveEditorPath: LocalFuncGetActiveEditor(),
+            inFolderNeeded: "FetchAsGet"
+        });
 
         vscode.window.showInformationMessage(`BoilerPlate code to: ${LocalToPath}`);
+        // const filePath = `${LocalToPath}/app.js`;
+        // StartFuncFromOpenApp({ inToPath: LocalFuncGetActiveEditor() });
     } catch (error) {
         vscode.window.showErrorMessage(`Error: ${error.message}`);
     };
 };
 
-const LocalFuncOpenEntryFile = ({ inToPath }) => {
-    const filePath = `${inToPath}/entryFile.js`;
-    StartFuncFromOpenApp({ inToPath: filePath });
-};
-
-const LocalFuncGetActiveEditor = async () => {
+const LocalFuncGetActiveEditorPath = async () => {
     const activeEditor = vscode.window.activeTextEditor;
 
     if (activeEditor) {
@@ -45,16 +46,16 @@ const LocalFuncGetActiveEditor = async () => {
     return null;
 };
 
-const LocalFuncForFolder = async () => {
-    // Try to get the currently selected folder in Explorer
-    await vscode.commands.executeCommand('copyFilePath');
+const LocalFuncGetActiveEditor = () => {
+    const activeEditor = vscode.window.activeTextEditor;
 
-    const clipboardText = await vscode.env.clipboard.readText();
+    if (activeEditor) {
+        const activeFilePath = activeEditor.document.uri.fsPath;
 
-    if (clipboardText && (await fse.pathExists(clipboardText)) && (await fse.lstat(clipboardText)).isDirectory()) {
-        return clipboardText;
+        return activeFilePath;
     };
 
+    // If no folder or active file is found, return null
     return null;
 };
 

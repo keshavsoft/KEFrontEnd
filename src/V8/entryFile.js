@@ -6,6 +6,7 @@ const { StartFunc: StartFuncTotalJs } = require("./TotalJs/entryFile");
 const { StartFunc: StartFuncDomLoad } = require("./DomLoad/entryFile");
 const { StartFunc: StartFuncSubTable } = require("./SubTable/entryFile");
 const { StartFunc: StartFuncFromDomContentLoad } = require("./DomContentLoad/entryFile");
+const { StartFunc: StartFuncFromFetchFuncs } = require("./FetchFuncs/entryFile");
 
 const StartFunc = () => {
     StartClientSide();
@@ -16,6 +17,7 @@ const StartFunc = () => {
     StartFuncDomLoad();
     StartFuncSubTable();
     StartFuncFromDomContentLoad();
+    StartFuncFromFetchFuncs();
 };
 
 module.exports = { StartFunc };
